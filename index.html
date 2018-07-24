@@ -2,29 +2,37 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <title>Rupya</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>iFWD</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="assets/js/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/libs/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
 
+    <script src="assets/libs/jquery/jquery.min.js" ></script>
+    <script src="assets/libs/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/libs/animatejs/animated.js"></script>
+    <link href="assets/libs/animatejs/animate.css" rel="stylesheet">
+    <script>
+        $(document).ready(function(){
+            // Animatejs
+            $('.animated').animated({
+                animatedIn: 'animated-in',
+                offset: 1,
+                reverse: false,
+                mobileDisabled: true
+            })
+        });
+    </script>
   </head>
 
   <body>
-    <layout>
-
-    </layout>
-    
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
-    <script src="assets/js/bootstrap/js/bootstrap.min.js"></script>
+    <section class="section-one animated"  data-animation="fadeIn">
+      <div class="container-fluid">
+        hello
+      </div>
+    </section>
   </body>
 </html>
