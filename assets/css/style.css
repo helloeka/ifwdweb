@@ -2917,6 +2917,21 @@ html, body {
   background-image: url("../img/bg.jpg");
   background-position: top center;
   background-repeat: no-repeat;
-  background-size: contain; }
+  background-size: contain;
+  padding: 20px 30px; }
+  .section-one .ifwd-menu {
+    background: #1C4549;
+    border-radius: 10px;
+    padding: 0px;
+    overflow: hidden;
+    flex-flow: column; }
+    .section-one .ifwd-menu .ifwd-menu-top {
+      width: 100%;
+      padding: 10px 20px;
+      color: #fff; }
+    .section-one .ifwd-menu .ifwd-menu-bottom {
+      background: #fff;
+      width: 100%;
+      padding: 20px 20px; }
 
 /*# sourceMappingURL=style.css.map */
