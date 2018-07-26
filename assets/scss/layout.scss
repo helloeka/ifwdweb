@@ -23,16 +23,39 @@ html, body {
     border-radius:10px;
     padding:0px;
     overflow: hidden;
-    flex-flow:column;;
-    .ifwd-menu-top { 
-      width:100%;
-      padding:10px 20px; 
-      color:#fff;
+    flex-flow:column;
+    .ifwd-navbar {
+      
+      .ifwd-menu-top { 
+        width:100%;
+        padding:10px 20px; 
+        color:#fff;
+      }
+      .ifwd-menu-bottom {
+        background:#fff;
+        width:100%;
+        padding:8px 20px;
+          .ifwd-list-menu {
+            // display: flex;
+            float:right;
+            margin:auto;
+            li {
+              list-style:none;
+            }
+          }
+        
+        a {
+          .ifwd-logo {
+            width: 80px;
+            height: 42px;
+            background-image:url(../img/logo-fwd.png);
+            background-repeat:no-repeat;
+            background-position:center;
+            background-size:100%;
+          }
+        } 
+      }
     }
-    .ifwd-menu-bottom {
-      background:#fff;
-      width:100%;
-      padding:20px 20px; 
-    }
+    
   }
 }

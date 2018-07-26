@@ -2925,13 +2925,25 @@ html, body {
     padding: 0px;
     overflow: hidden;
     flex-flow: column; }
-    .section-one .ifwd-menu .ifwd-menu-top {
+    .section-one .ifwd-menu .ifwd-navbar .ifwd-menu-top {
       width: 100%;
       padding: 10px 20px;
       color: #fff; }
-    .section-one .ifwd-menu .ifwd-menu-bottom {
+    .section-one .ifwd-menu .ifwd-navbar .ifwd-menu-bottom {
       background: #fff;
       width: 100%;
-      padding: 20px 20px; }
+      padding: 8px 20px; }
+      .section-one .ifwd-menu .ifwd-navbar .ifwd-menu-bottom .ifwd-list-menu {
+        float: right;
+        margin: auto; }
+        .section-one .ifwd-menu .ifwd-navbar .ifwd-menu-bottom .ifwd-list-menu li {
+          list-style: none; }
+      .section-one .ifwd-menu .ifwd-navbar .ifwd-menu-bottom a .ifwd-logo {
+        width: 80px;
+        height: 42px;
+        background-image: url(../img/logo-fwd.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100%; }
 
 /*# sourceMappingURL=style.css.map */
