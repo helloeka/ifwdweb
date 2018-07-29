@@ -9,5 +9,102 @@
 
 }
 @media only screen and (max-width: 767px) {
+    .section-one {
+        .ifwd-menu{
+            flex-flow: wrap;
+            display:block;
+            padding:50px 0px 0px 0px;
+            height: 50px;
+            z-index: 1;
+            a {
+                
+                .ifwd-logo-white {
+                    width: 55px;
+                    height: 40px;
+                    background-image: url(../img/logo-fwd-white.png);
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: 100%;
+                    position: absolute;
+                    top: 0;
+                    margin: 6px 20px;
+                }
+            }
+            .ifwd-navbar {
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                border-bottom-right-radius: 10px;
+                border-bottom-left-radius: 10px;
+                overflow: hidden;
+                margin:0px 10px;
+                .ifwd-menu-top { 
+                    background:#f1f1f1;
+                    .ifwd-hotline {
+                        text-align:center;
+                        color:$orange;
+                    }
+                    .ifwd-list-top-menu {
+                        ul {
+                            margin:auto;
+                            display: grid;
+                            float:none;
+                        li {
+                            padding:5px 0px 5px 0px;
+                            text-align:center;
+                            a {
+                            text-align:center;
+                            color:$green
+                            }
+                        }
+                        }
+                    }
+                }
+                .ifwd-menu-bottom {
+                    display: grid;
+                    .ifwd-list-menu {
+                            li {
+                                padding: 0px 0px 0px 0px;
+                                text-align:center;
+                            }
+                    }
+                    a {
+                        .ifwd-logo {
+                            display:none;
+                        }
+                    } 
+                }
+            }
+            
+        }
+    }
 
+}
+@media only screen and (min-width: 768px) {
+    .section-one {
+        .ifwd-menu{
+            a {
+                .ifwd-logo-white {
+                    display:none;
+                }
+            }
+
+            .ifwd-navbar {
+                display:contents !important;
+                .ifwd-menu-top { 
+                
+                }
+                .ifwd-menu-bottom {
+                    .ifwd-list-menu {
+                        li {
+                            padding: 0px 0px 0px 30px;
+                        }
+                    }
+                    a {
+                        .ifwd-logo {
+                            
+                        }
+                    } 
+                }
+            }
+        }
+    }
 }
