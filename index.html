@@ -29,7 +29,8 @@
   </head>
 
   <body>
-    <section class="section-one animated"  data-animation="fadeIn">
+    <section class="section-one animated"  data-animation="fadeInDown">
+      <div class="container">
         <nav class="navbar navbar-expand-md navbar-dark ifwd-menu animated" data-animation="slideInDown">
             <a class="" href="#"><div class="ifwd-logo-white"></div></a>
             <button class="navbar-toggler fwd-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -55,7 +56,13 @@
                   <a class="navbar-brand" href="#"><div class="ifwd-logo"></div></a>
                   <ul class="navbar-nav mr-auto ifwd-list-menu">
                       <li class="nav-item active">
-                        <a class="nav-link" href="#">Bebas Aksi <span class="sr-only">(current)</span></a>
+                        <a class="nav-link dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >Bebas Aksi <span class="sr-only">(current)</span></a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">Bebas Aksi </a>
+                            <a class="dropdown-item" href="#">Bebas Aksi Flash 1 Minggu</a>
+                            <a class="dropdown-item" href="#">Bebas Aksi Flash 1 Bulan</a>
+                            <a class="dropdown-item" href="#">Bebas Aksi Flash 1 Tahun</a>
+                          </div>
                       </li>
                       <li class="nav-item">
                         <a class="nav-link" href="#">Bebas Rencana</a>
@@ -69,16 +76,282 @@
         </nav>
         <div class="clearfix"></div>
         <div class="row">
-          <div class="col-md-9">
-            <div class="ifwd-slider-container">
+          <div class="col-lg-6">
+            <div class="ifwd-slider-container animated"  data-animation="slideInLeft">
               <h1>Mudahnya Beli Premi Asuransi</h1>
-              <p>Kami menghadirkan sesuatu yang berbeda. <br> Nikmati cara termudah membeli produk asuransi dengan perlindungan bernilai tinggi dan pembayaran yang fleksibel. Kami akan selalu membantu kamu, lewat telepon atau online chat.
-                </p>
+              <p>Kami menghadirkan sesuatu yang berbeda. <br> Nikmati cara termudah membeli produk asuransi dengan perlindungan bernilai tinggi dan pembayaran yang fleksibel. Kami akan selalu membantu kamu, lewat telepon atau online chat.</p>
+              <a href="#" class="btn btn-light btn-ifwd-white"><img src="assets/img/ico-download.png">Brosur</a><a href="#" class="btn-ifwd-text">Baca Selengkapnya</a>
             </div>
           </div>
-          <div class="col-md-3">
-            
-           </div>
+          <div class="col-lg-6">
+            <div class="ifwd-simulation-container animated" data-animation="slideInRight">
+              <h1> Hitung Preminya</h1>
+              <div class="form-group">
+                <select class="form-control">
+                  <option>Pilih Produknya</option>
+                  <option>Bebas Aksi</option>
+                  <option>Bebas Rencana</option>
+                  <option>FWD Loop</option>
+                  <option>Asuransi Bebas Handal</option>
+                </select>
+              </div>
+              <div class="form-group">
+                  <input type="text" class="form-control" placeholder="Tanggal Lahir">
+              </div>
+              <div class="form-group">
+                <select class="form-control">
+                  <option>Besar Uang Pertangungan</option>
+                  <option>100 Juta</option>
+                  <option>200 Juta</option>
+                  <option>300 Juta</option>
+                  <option>400 Juta</option>
+                  <option>500 Juta</option>
+                  <option>600 Juta</option>
+                  <option>700 Juta</option>
+                  <option>1 Milyar</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <select class="form-control">
+                  <option>Periode Pertangungan</option>
+                  <option>1 Tahun</option>
+                  <option>2 Tahun</option>
+                  <option>3 Tahun</option>
+                  <option>5 Tahun</option>
+                  <option>6 Tahun</option>
+                  <option>7 Tahun</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <select class="form-control">
+                  <option>Frekuensi Pembayaran </option>
+                  <option>Monthly</option>
+                  <option>Yearly</option>
+                </select>
+              </div>
+              <a href="#" class="btn btn-ifwd-green btn-100 margin-tb-0-30" >Hitung</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section-two animated"  data-animation="fadeIn">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+              <div class="row">
+                <div class="col-lg-6 " >
+                  <div id="product1-container" class="animated" data-animation="fadeInDown" >
+                      <div id="product1-card" >
+                        <div class="front card1">
+                          <img src="assets/img/card1.svg"/>
+                        </div>
+                        <div class="back card1 center">
+                            <h1>Bebas Aksi </h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vel risus ut tellus vestibulum malesuada. Fusce eu lobortis nunc, ut convallis ligula.</p>
+                            <a href="#" class="btn btn-card color-blue">Selengkapnya</a>
+                        </div>
+                      </div>
+                  </div>
+                  <div id="product2-container" class="animated" data-animation="fadeInUp">
+                      <div id="product2-card" >
+                        <div class="front card2">
+                          <img src="assets/img/card2.svg"/>
+                        </div>
+                        <div class="back card2 center">
+                            <h1>Bebas Optimal </h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vel risus ut tellus vestibulum malesuada. Fusce eu lobortis nunc, ut convallis ligula.</p>
+                            <a href="#" class="btn btn-card color-blue">Selengkapnya</a>
+                        </div>
+                      </div>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div id="product3-container" class="animated" data-animation="fadeInDown">
+                      <div id="product3-card" >
+                        <div class="front card3">
+                          <img src="assets/img/card3.svg"/>
+                        </div>
+                        <div class="back card3 center">
+                            <h1>Bebas Rencana </h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vel risus ut tellus vestibulum malesuada. Fusce eu lobortis nunc, ut convallis ligula.</p>
+                            <a href="#" class="btn btn-card color-blue">Selengkapnya</a>
+                        </div>
+                      </div>
+                  </div>
+                  <div id="product4-container" class="animated" data-animation="fadeInUp">
+                      <div id="product4-card" >
+                        <div class="front card4">
+                          <img src="assets/img/card4.svg"/>
+                        </div>
+                        <div class="back card4 center">
+                            <h1>FWD Loop </h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vel risus ut tellus vestibulum malesuada. Fusce eu lobortis nunc, ut convallis ligula.</p>
+                            <a href="#" class="btn btn-card color-blue">Selengkapnya</a>
+                        </div>
+                      </div>
+                  </div>
+                </div>
+              </div>
+              
+          </div>
+          <div class="col-lg-6">
+            <div class="ifwd-product-description animated" data-animation="fadeInRight">
+              <h1>Pilih Produk <br>Sesuai Kebutuhan</h1>
+              <p>Kami memiliki berbagai produk yang dirancang sesuai dengan kebutuhan dan gaya hidup kamu, agar kamu dan keluarga bisa berinvestasi dan juga terlindungi selagi menjalani passion!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-three animated"  data-animation="fadeIn">
+      <div class="ifwd-featured">
+        <div class="container">
+            <div class="row">
+              <div class="col-lg-12 animated" data-animation="fadeInDown">
+                  <h1>Banyak Untungnya</h1>
+              </div>
+              <div class="col-lg-4">
+                <div class="card-featured animated" data-animation="fadeInLeft">
+                  <img src="assets/img/img-featured1.svg">
+                  <h2>Beli, Langsung Aktif</h2>
+                  <p>Beli melalui online dan <br>lansung aktif</p>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                  <div class="card-featured animated" data-animation="fadeInUp">
+                      <img src="assets/img/img-featured2.svg">
+                      <h2>Mudahnya Klaim</h2>
+                      <p>Proses cepat, mudah dan <br> transparan</p>
+                  </div>
+              </div>
+              <div class="col-lg-4">
+                  <div class="card-featured animated" data-animation="fadeInRight">
+                      <img src="assets/img/img-featured3.svg">
+                      <h2>Layanan 24 jam</h2>
+                      <p>Ada pertanyaan? <br>Kami akan melayani anda 24 jam </p>
+                  </div>
+              </div>
+            </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="section-four animated"  data-animation="fadeIn">
+        <div class="ifwd-help">
+          <h1  class="animated" data-animation="fadeInDown">Butuh Bantuan?</h1>
+            <div class="container">
+                <div class="row">
+                  <div class="col-lg-12">
+                      <div class="ifwd-help-container animated" data-animation="fadeInUp">
+                          <div class="form-row">
+                              <div class="form-group col-lg">
+                                <input type="text" class="form-control" placeholder="Nama">
+                              </div>
+                              <div class="form-group col-lg">
+                                <input type="number" class="form-control" placeholder="No HP">
+                              </div>
+                              <div class="form-group col-lg">
+                                  <input type="text" class="form-control" placeholder="Email">
+                              </div>
+                              <div class="form-group col-lg">
+                                <select id="inputState" class="form-control">
+                                  <option selected>Hubungi Saya Pada</option>
+                                  <option>Pagi (Jam 09.00-12.00 WIB)</option>
+                                  <option>Siang (Jam 13.00-15.00 WIB)</option>
+                                  <option>Sore (Jam 15.00-17.00 WIB)</option>
+                                </select>
+                              </div>
+                              <div class="col-lg">
+                                <a href="#" class="btn btn-ifwd-green btn-100 ">Hubungi Saya</a>
+                              </div>
+                            </div>
+                      </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-five animated" data-animation="fadeInUp">
+        <div class="ifwd-footer-container">
+          <div class="container">
+              <div class="row">
+                <div class="col-lg-3">
+                  <div class="ifwd-footer animated" data-animation="fadeInLeft">
+                    <h2>Produk</h2>
+                    <ul>
+                      <li><a href="#">Bebas Aksi</a></li>
+                      <li><a href="#">Bebas Rencana</a></li>
+                      <li><a href="#">FWD LooP</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="ifwd-footer animated" data-animation="fadeInLeft">
+                        <h2>Website</h2>
+                        <ul class="subtitle">
+                            <li>FWD Life</li>
+                            <li class="margin-bottom-15"><a href="#">www.fwd.co.id</a></li>
+                            <li>Lihat Aktivitas Kami</li>
+                            <li><a href="#">www.bebaskanlangkah.com</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="ifwd-footer animated" data-animation="fadeInRight">
+                        <h2>Bergabung</h2>
+                        <ul>
+                          <li><a href="#">Karir</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="ifwd-footer animated" data-animation="fadeInRight">
+                        <h2>Layanan Hotline</h2>
+                        <img src="assets/img/ico-call.png">
+                        <p class="call">1500 391 </p>
+                        <a href="#"><img src="assets/img/ico-fb.png"></a>
+                        <a href="#"><img src="assets/img/ico-youtube.png"></a>
+                    </div>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="ifwd-ojk animated" data-animation="fadeInUp">
+          <div class="container">
+            <div class="row">
+            <div class="col-lg-12">
+              <p>PT FWD Life Indonesia ("FWD Life") adalah perusahaan asuransi jiwa patungan dan merupakan bagian dari FWD Group. FWD Life berdiri sejak November 2012 dan memperoleh izin di bidang asuransi jiwa dari Otoritas Jasa Keuangan (OJK) pada bulan Februari 2013. FWD Life terdaftar dan tunduk pada pengawasan OJK. iFWD Liberate adalah nama salah satu jalur distribusi asuransi melalui daring (online) dari FWD Life.</p>
+            </div>
+          </div>
+          </div>
+        </div>
+        <div class="ifwd-copyright animated" data-animation="fadeInUp">
+            <div class="container">
+                <div class="row">
+                  <div class="col-lg-6">
+                    <div class="logo-footer">
+                      <a href="#">
+                        <img src="assets/img/logo-fwd-white.png">
+                      </a>
+                      <p>2018 FWD Indonesia. All rights reserved.</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="ifwd-terms">
+                      <ul>
+                        <li><a href="#">Online Security</a></li>
+                        <li>|</li>
+                        <li><a href="#">Disclaimer</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="clearfix"></div>
+                </div>
+            </div>
         </div>
     </section>
   </body>
